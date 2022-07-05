@@ -1,5 +1,8 @@
 import '../styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import "@wordpress/block-library/build-style/style.css";
+//import "@wordpress/block-library/build-style/editor.css";
+import "@wordpress/block-library/build-style/theme.css";
 import { useEffect } from 'react';
 
 import { ApolloProvider } from '@apollo/client/react';
