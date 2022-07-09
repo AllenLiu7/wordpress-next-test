@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     domains: ['dev-allenwp.pantheonsite.io'],
   },
+  i18n: {
+    locales: ['en', 'zh_HK'],
+    defaultLocale: 'en',
+  }
 }
 
 module.exports = nextConfig

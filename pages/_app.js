@@ -8,6 +8,8 @@ import { useEffect } from 'react';
 import { ApolloProvider } from '@apollo/client/react';
 import  client  from '../apollo-client';
 
+import NavBar from '../components/NavBar';
+
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
         import('bootstrap/dist/js/bootstrap');
@@ -15,6 +17,7 @@ function MyApp({ Component, pageProps }) {
 
     return (
         <ApolloProvider client={client}>
+            <NavBar/>
             <Component {...pageProps} />
         </ApolloProvider>
     );
