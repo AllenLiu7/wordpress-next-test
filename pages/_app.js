@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 
 import { ApolloProvider } from '@apollo/client/react';
 import  client  from '../apollo-client';
+import { appWithTranslation } from 'next-i18next';
 
 import NavBar from '../components/NavBar';
 
@@ -23,4 +24,4 @@ function MyApp({ Component, pageProps }) {
     );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

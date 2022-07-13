@@ -20,13 +20,13 @@ function StaticSide({ result }) {
                         key={node.id}
                         style={{ width: '18rem' }}
                     >
-                        <Image
+                        {/* <Image
                             src={node.Thumbnail.image.sourceUrl}
                             width={200}
                             height={200}
                             alt='image'
                             className='card-img-top'
-                        />
+                        /> */}
                         {/* <img
                             src={node.Thumbnail.image.sourceUrl}
                             alt='image'
