@@ -4,8 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import { toBaseUrl } from '../lib/urlBuilder';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 function StaticSide({ result }) {
+    const { t } = useTranslation('common');
 
     const {locale} = useRouter()
     return (
@@ -36,6 +39,7 @@ function StaticSide({ result }) {
                         <div className='card-body'>
                             <h5 className='card-title'>{node.title}</h5>
                             <p className='card-text'>node id: {node.id}</p>
+                            <div>{t('card-text')}</div>
                             <Link
                                 href={`/movies/${node.translation.slug}`}
                                 locale={locale}
@@ -65,11 +69,7 @@ export async function getStaticProps({ locale }) {
                 title
                 id
                 date
-                Thumbnail {
-                  image {
-                    sourceUrl
-                  }
-                }
+            
                 translation(language: EN) {
                   slug
                 }
@@ -88,6 +88,7 @@ export async function getStaticProps({ locale }) {
 
     return {
         props: {
+            ...await serverSideTranslations(locale, ['common']),
             result,
         },
     };
