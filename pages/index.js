@@ -24,9 +24,11 @@ export default function Home() {
                             Static Side Rendering
                         </button>
                     </Link>
-                    <button type='button' className='btn btn-primary m-2'>
-                        Server Side Rendering
-                    </button>
+                    <Link href='/swiper'>
+                        <button type='button' className='btn btn-primary m-2'>
+                            Swiper Template
+                        </button>
+                    </Link>
                     <button type='button' className='btn btn-primary m-2'>
                         Primary
                     </button>

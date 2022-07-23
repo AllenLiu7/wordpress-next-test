@@ -14,3 +14,31 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.swiper-pagination-bullets{
+  display: flex;
+  height: 100%;
+}
+
+.swiper-pagination-bullet{
+  width: 100% !important;
+  height: auto !important;
+  background: unset !important;
+}
+
+.swiper-pagination-bullet-active{
+
+}
+
+.txt{
+  text-align: left;
+}
+
+.bar{
+  height: 7px;
+  width: 100%;
+  border: 3px solid #000000;
+  border-radius: 3px 0 3px 0;
+  opacity: 1;
+  margin-right: 25px;
+  }
