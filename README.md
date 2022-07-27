@@ -1,6 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+<<<<<<< Updated upstream
 ## Getting Started before doom 223
+=======
+## Getting Started before doom stash
+>>>>>>> Stashed changes
 
 First, run the development server:
 
