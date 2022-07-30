@@ -42,3 +42,7 @@ a {
   opacity: 1;
   margin-right: 25px;
   }
+
+  #thumbs .swiper-wrapper{
+    justify-content: center;
+  }
